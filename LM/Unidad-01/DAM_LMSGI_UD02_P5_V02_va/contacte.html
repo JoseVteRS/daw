@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTE | JOSE VTE RIPOLL SOLANES - DAM_LMSGI_UD02_P5_V02_va</title>
+</head>
+
+<body>
+    <main>
+        <img src="./images/logo.png" width="60px" title="Logo" alt="Logotipo de la empresa" />
+        <h1>Contacte</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>Contacte</li>
+                <li><a href="./on-estem.html">On estém</a></li>
+                <li><a href="./qui-som.html">Qui som?</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <!-- 
+            La pàgina de contacte ha de contindre un formulari amb els camps:
+            • Nom
+            • Cognoms
+            • Correu
+            • Sexe (haurà de deixar triar mitjançant un botó radie entre home, dona o un altre)
+            • Un camp de text per si es desitja especificar un altre gènere
+            • Email.
+            • DNI
+            • Un camp direcció que l'usuari introduirà en una sola caixa de text.
+            • Una selecció de preferències entre diferents opcions que estaran relacionades amb el seu
+            web (per exemple si és de pel·lícules, una selecció de gènere: comèdia, terror, etc)
+            • Un apartat de Comentaris (en el seu interior l'usuari ha de poder llegir “Escriba #ací els
+            seus comentaris”).
+            • Així mateix, ha d'incloure un check amb el text “He llegit i accepte la política de
+            privacitat”.
+            • Botó d'Enviament "" i botó d'Esborrament "".
+ -->
+            <form action="">
+                <fieldset>
+                    <legend>Dades personals</legend>
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Jose Vte">
+                    </div>
+
+                    <div>
+                        <label for="cognoms">Cognoms</label>
+                        <input type="text" name="cognoms" id="cognoms" placeholder="Ripoll Solanes">
+                    </div>
+
+                    <div>
+                        <label for="nom">Correu</label>
+                        <input type="text" name="correu" id="correu" placeholder="jose@correu.es">
+                    </div>
+
+                    <div>
+                        <label for="sexe">Sexe</label><br>
+                        <input type="radio" name="sexe" id="sexe">Home<br>
+                        <input type="radio" name="sexe" id="sexe">Dona<br>
+                        <input type="radio" name="sexe" id="sexe">Altre<br>
+                        <label for="sexe">Altre sexe:</label>
+                        <input type="text" name="sexe" id="sexe">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="dni">DNI</label>
+                        <input type="text" name="dni" id="dni">
+                    </div>
+
+                    <div>
+                        <label for="direccio">Direcció</label>
+                        <input type="text" name="direccio" id="direccio">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="event" id="event" />
+                        <label for="event">Boda</label> <br>
+                        <input type="checkbox" name="event" id="event" />
+                        <label for="event">Comunió</label> <br>
+                        <input type="checkbox" name="event" id="event" />
+                        <label for="event">Aniversari</label> <br>
+                        <input type="checkbox" name="event" id="event" />
+                        <label for="event">Bateig</label> <br>
+                    </div>
+
+                    <div>
+                        <label>Comentaris</label> <br>
+                        <textarea name="comentari" id="comentari" rows="7" cols="60">
+                            Escriga ací els seus comentaris
+                        </textarea>
+
+                        <div>
+                            <input type="checkbox" name="politica" id="politica">
+                            <label for="politica">He llegit i accepte la política de
+                                privacitat</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Esborrar</button>
+            </form>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="./politica-de-privacitat.html">Políca de privacitat</a></li>
+                <li><a href="./avis-legal.html">Avís legal</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+</html>
