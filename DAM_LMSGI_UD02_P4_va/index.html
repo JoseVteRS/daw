@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSE VTE RIPOLL SOLANES - DAM_LMSGI_UD02_P4_va</title>
+</head>
+
+<body>
+    <h1>Pràctica 4</h1>
+    <p>Realitza un formulari amb la temàtica que preferisques per a l'enviament de dades. El formulari
+        haurà de tindre, almenys, els següents elements:</p>
+    <ul>
+        <li>camp de text</li>
+        <li>camp de text ocult</li>
+        <li>botó radie</li>
+        <li>casella de selecció</li>
+        <li>selecció múltiple</li>
+        <li>area de text</li>
+        <li>envio</li>
+        <li>esborrament</li>
+    </ul>
+    <p>
+        Utilitza per al formulari un métdo get, que enviarà les dades a una supesta pàgina
+        recepcionformulario.php. Fixa't en la URL que es genera en enviar el formulari.
+    </p>
+
+    <h2>Formulari</h2>
+    <main>
+        <form action="recepcionformulario.php" method="get">
+            <fieldset>
+                <legend>Dades personales</legend>
+                <input type="hidden" name="nonce" id="nonce">
+
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom p.e. Jose Vte">
+                </div>
+
+
+                <div>
+                    <label for="cognom">Cognoms</label>
+                    <input type="text" name="cognom" id="cognom" placeholder="Cognoms p.e. Ripoll Solanes">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dades laborals</legend>
+                <div>
+                    <label for="professio">Professió</label>
+                    <select name="professio" id="professio">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">FullStack</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="Seguretat">Seguretat</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="professio">Nivell</label>
+                    <select name="professio" id="professio">
+                        <option value="frontend">Junior</option>
+                        <option value="backend">Mid - Junior</option>
+                        <option value="fullstack">Mid - Senior</option>
+                        <option value="DevOps">Senior</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="professio">Llenguatges</label>
+                    <select name="professio" id="professio" multiple>
+                        <option value="html">HTML</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="php">PHP</option>
+                        <option value="java">java</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Torn</legend>
+                <div>
+                    <div>
+                        <input type="radio" name="torn" id="torn">
+                        <label>Matí</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="torn" id="torn">
+                        <label>Migdia</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="torn" id="torn">
+                        <label>Nit</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informació adicional</legend>
+                <textarea name="informacio" id="informacio" rows="5" cols="50">
+                   
+                </textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Privacitat</legend>
+                <label for="politiques">Politiques de privacitat</label>
+                <div>
+                    <input type="checkbox" name="politiques" id="politiques">Acepta les nostres polítiques de privacitat
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+</body>
+
+</html>
